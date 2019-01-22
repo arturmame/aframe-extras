@@ -60,6 +60,8 @@ module.exports = AFRAME.registerComponent('keyboard-controls', {
       if (keys.KeyA || keys.ArrowLeft)  { this.dVelocity.x -= 1; }
       if (keys.KeyS || keys.ArrowDown)  { this.dVelocity.z += 1; }
       if (keys.KeyD || keys.ArrowRight) { this.dVelocity.x += 1; }
+      if (keys.KeyQ)  { this.dVelocity.y += 1; }
+      if (keys.KeyZ) { this.dVelocity.y -= 1; }
     }
 
     return this.dVelocity.clone();
